@@ -5,4 +5,5 @@ return {
    { "tpope/vim-surround" } ,
    { "williamboman/nvim-lsp-installer" },
    { "aserebryakov/vim-todo-lists" },
+   { "airblade/vim-gitgutter" },
 }
