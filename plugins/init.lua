@@ -1,9 +1,23 @@
 return {
-   { "ggandor/lightspeed.nvim" },
-   { "mg979/vim-visual-multi" },
-   { "neovim/nvim-lspconfig" },
-   { "tpope/vim-surround" } ,
-   { "williamboman/nvim-lsp-installer" },
-   { "aserebryakov/vim-todo-lists" },
-   { "airblade/vim-gitgutter" },
+   ["ggandor/lightspeed.nvim"] = {
+      event = { "BufRead", "BufNewFile" }
+   },
+   ["mg979/vim-visual-multi"] = {
+      event = { "BufRead", "BufNewFile" }
+   },
+   ["neovim/nvim-lspconfig"] = {
+      event = { "VimEnter" }
+   },
+   ["tpope/vim-surround"] = {
+      event = { "BufRead", "BufNewFile" }
+   },
+   ["williamboman/nvim-lsp-installer"] = {
+      event = { "VimEnter" }
+   },
+   ["aserebryakov/vim-todo-lists"] = {
+      event = { "BufRead", "BufNewFile" }
+   },
+   ["airblade/vim-gitgutter"] = {
+      event = { "BufRead", "BufNewFile" }
+   }
 }

@@ -19,7 +19,7 @@ M.ui = {
 local userPlugins = require "custom.plugins" -- path to table
 
 M.plugins = {
-  install = userPlugins,
+  user = userPlugins,
   status = {
     dashboard = true,
   },
