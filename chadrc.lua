@@ -10,10 +10,11 @@ M.options = {
    noexpandtab = false,
    tabstop = 2,
    wrap = false,
+   clipboard = "unnamedplus",
 }
 
 M.ui = {
-   theme = "gruvbox",
+   theme = "gruvchad",
 }
 
 local userPlugins = require "custom.plugins" -- path to table
@@ -27,7 +28,14 @@ M.plugins = {
     nvim_treesitter = {
       ensure_installed = "all",
     }
-  }
+  },
+  options = {
+    lspconfig = {
+      setup_lspconf = "custom.plugins.lspconfig"
+    }
+  },
 }
+
+M.mappings = require "custom.mappings"
 
 return M
